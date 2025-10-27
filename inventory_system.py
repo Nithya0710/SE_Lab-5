@@ -1,12 +1,11 @@
+"""
+Inventory Management System
+Provides functions for adding, removing, loading, saving, and printing stock data for a simple inventory management system.
+"""
+# added a docstring to explain what the entire code does
 import json
 import logging
 from datetime import datetime
-
-# added a docstring to explain what the entire code does
-"""
-Inventory Management System
-Handles adding, removing, saving, and loading of stock data.
-"""
 
 #changed all functions names to follow snake_case
 
@@ -14,11 +13,10 @@ Handles adding, removing, saving, and loading of stock data.
 stock_data = {}
 
 def add_item(item="default", qty=0, logs=None):  # changed logs=[] to logs=None
-    # added docstring to explain what the func does
     """
     Add an item and record it in logs
     Returns: None
-    """     
+    """
     if logs is None:    #each func gets a fresh list
         logs=[]
     if not item:
@@ -71,7 +69,7 @@ def print_data():
     """
     print("Items Report")
     for i in stock_data:
-        print(i, "->", stock_data[i])
+        print(f"{i} -> {stock_data[i]}")
 
 def check_low_items(threshold=5):
     """
@@ -92,11 +90,11 @@ def main():
     """
     add_item("apple", 10)
     add_item("banana", -2)
-    add_item(123, "ten")  # invalid types, no check
+    add_item(qty=123, item="ten")  # invalid types, no check
     remove_item("apple", 3)
     remove_item("orange", 1)
-    print("Apple stock:", get_qty("apple"))
-    print("Low items:", check_low_items())
+    print(f"Apple stock: {get_qty("apple")}")
+    print(f"Low items: {check_low_items()}")
     save_data()
     load_data()
     print_data()

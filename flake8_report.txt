@@ -1,11 +1,18 @@
 inventory_system.py:2:1: F401 'logging' imported but unused
-inventory_system.py:8:1: E302 expected 2 blank lines, found 1
-inventory_system.py:14:1: E302 expected 2 blank lines, found 1
-inventory_system.py:19:5: E722 do not use bare 'except'
-inventory_system.py:22:1: E302 expected 2 blank lines, found 1
-inventory_system.py:25:1: E302 expected 2 blank lines, found 1
-inventory_system.py:31:1: E302 expected 2 blank lines, found 1
-inventory_system.py:36:1: E302 expected 2 blank lines, found 1
+inventory_system.py:11:1: E265 block comment should start with '# '
+inventory_system.py:16:1: E302 expected 2 blank lines, found 1
+inventory_system.py:21:8: W291 trailing whitespace
+inventory_system.py:22:25: E262 inline comment should start with '# '
+inventory_system.py:23:13: E225 missing whitespace around operator
+inventory_system.py:29:1: E302 expected 2 blank lines, found 1
 inventory_system.py:41:1: E302 expected 2 blank lines, found 1
-inventory_system.py:48:1: E302 expected 2 blank lines, found 1
-inventory_system.py:61:1: E305 expected 2 blank lines after class or function definition, found 1
+inventory_system.py:44:13: W291 trailing whitespace
+inventory_system.py:49:1: E302 expected 2 blank lines, found 1
+inventory_system.py:52:13: W291 trailing whitespace
+inventory_system.py:59:1: E302 expected 2 blank lines, found 1
+inventory_system.py:67:1: E302 expected 2 blank lines, found 1
+inventory_system.py:76:1: E302 expected 2 blank lines, found 1
+inventory_system.py:88:1: E302 expected 2 blank lines, found 1
+inventory_system.py:90:47: W291 trailing whitespace
+inventory_system.py:91:80: E501 line too long (82 > 79 characters)
+inventory_system.py:105:1: E305 expected 2 blank lines after class or function definition, found 1
